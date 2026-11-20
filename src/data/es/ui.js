@@ -1,0 +1,21 @@
+// UI (español): textos sueltos de la interfaz (botones, títulos, etiquetas de accesibilidad).
+export const ui = {
+  htmlLang: 'es',
+  tituloPagina: 'Mauricio Lara · Arxevo — Software claro para problemas reales',
+  inicioAria: 'Arxevo, inicio',
+  navAria: 'Principal',
+  cv: 'CV',
+  hablemos: 'Hablemos ↗',
+  hablemosProyecto: 'Hablemos de tu proyecto ↗',
+  verCv: 'Ver mi CV',
+  mensajeWhatsapp: 'Hola Mauricio, vi tu página de Arxevo y me gustaría hablar de un proyecto.',
+  soy: 'Soy',
+  diagramaAria: 'Esquema de cómo construyo: interfaz, lógica y datos',
+  sobreMi: 'Sobre mí',
+  fotoDe: 'Foto de',
+  stack: 'Stack',
+  stackTitulo: 'Con qué construyo.',
+  pie: 'Cali, Colombia',
+  botonIdioma: 'EN',
+  botonIdiomaAria: 'Change language to English',
+}

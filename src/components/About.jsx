@@ -1,17 +1,20 @@
 import Icon from './Icon'
-import { perfil } from '../data/perfil'
+import { contacto } from '../data/contacto'
+import { useIdioma } from '../i18n/useIdioma'
 
-// Sección "Sobre mí" (fondo claro): foto o iniciales, texto y datos rápidos.
+// Sección "Sobre mí": foto o iniciales, texto y datos rápidos.
 export default function About() {
-  const { sobreMi, foto, nombre, iniciales } = perfil
+  const { perfil, ui } = useIdioma()
+  const { sobreMi } = perfil
+  const { foto, nombre, iniciales } = contacto
   return (
     <section className="about" id="sobre-mi">
       <div className="wrap about-grid">
         <div className="photo">
-          {foto ? <img src={foto} alt={`Foto de ${nombre}`} /> : <span aria-hidden="true">{iniciales}</span>}
+          {foto ? <img src={foto} alt={`${ui.fotoDe} ${nombre}`} /> : <span aria-hidden="true">{iniciales}</span>}
         </div>
         <div>
-          <div className="eyebrow">Sobre mí</div>
+          <div className="eyebrow">{ui.sobreMi}</div>
           <h2>{sobreMi.titulo}</h2>
           {sobreMi.parrafos.map((texto) => <p key={texto}>{texto}</p>)}
           <ul className="facts">

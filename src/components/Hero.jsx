@@ -1,19 +1,20 @@
 import Icon from './Icon'
-import { perfil, enlaceWhatsapp } from '../data/perfil'
-import { arquitectura } from '../data/arquitectura'
+import { contacto, enlaceWhatsapp } from '../data/contacto'
+import { useIdioma } from '../i18n/useIdioma'
 
 // Portada: titular, presentación, botones y tarjeta "Cómo construyo".
 export default function Hero() {
+  const { perfil, ui, arquitectura } = useIdioma()
   return (
     <section className="hero" id="inicio">
       <div className="wrap hero-grid">
         <div>
           <div className="eyebrow">{perfil.etiqueta}</div>
           <h1>{perfil.titularInicio} <span>{perfil.titularResaltado}</span></h1>
-          <p className="lead">Soy <strong>{perfil.nombre}</strong>, {perfil.presentacion}</p>
+          <p className="lead">{ui.soy} <strong>{contacto.nombre}</strong>, {perfil.presentacion}</p>
           <div className="actions">
-            <a className="btn btn-primary" href={enlaceWhatsapp}>Hablemos de tu proyecto ↗</a>
-            <a className="btn btn-ghost" href={perfil.cv}>Ver mi CV</a>
+            <a className="btn btn-primary" href={enlaceWhatsapp(ui.mensajeWhatsapp)}>{ui.hablemosProyecto}</a>
+            <a className="btn btn-ghost" href={perfil.cv}>{ui.verCv}</a>
           </div>
           <ul className="meta">
             <li><Icon nombre="ubicacion" />{perfil.ubicacion}</li>
@@ -21,7 +22,7 @@ export default function Hero() {
           </ul>
         </div>
 
-        <div className="diagram" role="img" aria-label="Esquema de cómo construyo: interfaz, lógica y datos">
+        <div className="diagram" role="img" aria-label={ui.diagramaAria}>
           <div className="d-head">
             <span>{arquitectura.titulo}</span>
             <span className="ok">{arquitectura.estado}</span>

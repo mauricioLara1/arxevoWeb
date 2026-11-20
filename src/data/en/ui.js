@@ -1,0 +1,21 @@
+// UI (English): loose interface texts. Same keys as es/ui.js.
+export const ui = {
+  htmlLang: 'en',
+  tituloPagina: 'Mauricio Lara · Arxevo — Clear software for real problems',
+  inicioAria: 'Arxevo, home',
+  navAria: 'Main',
+  cv: 'CV',
+  hablemos: "Let's talk ↗",
+  hablemosProyecto: "Let's talk about your project ↗",
+  verCv: 'View my CV',
+  mensajeWhatsapp: 'Hi Mauricio, I saw your Arxevo website and I would like to talk about a project.',
+  soy: "I'm",
+  diagramaAria: 'Diagram of how I build: interface, logic and data',
+  sobreMi: 'About me',
+  fotoDe: 'Photo of',
+  stack: 'Stack',
+  stackTitulo: 'What I build with.',
+  pie: 'Cali, Colombia',
+  botonIdioma: 'ES',
+  botonIdiomaAria: 'Cambiar idioma a español',
+}

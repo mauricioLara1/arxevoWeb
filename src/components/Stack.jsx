@@ -1,12 +1,13 @@
-import { stack } from '../data/stack'
+import { useIdioma } from '../i18n/useIdioma'
 
-// Sección "Stack": un cuadro por grupo de src/data/stack.js
+// Sección "Stack": un cuadro por grupo de data/<idioma>/stack.js
 export default function Stack() {
+  const { stack, ui } = useIdioma()
   return (
     <section className="stack" id="stack">
       <div className="wrap">
-        <div className="eyebrow">Stack</div>
-        <h2>Con qué construyo.</h2>
+        <div className="eyebrow">{ui.stack}</div>
+        <h2>{ui.stackTitulo}</h2>
         <div className="stack-grid">
           {stack.map((grupo) => (
             <div className="group" key={grupo.grupo}>

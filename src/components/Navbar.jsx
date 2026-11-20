@@ -1,22 +1,26 @@
 import Logo from './Logo'
-import { perfil, enlaceWhatsapp } from '../data/perfil'
-import { navegacion } from '../data/navegacion'
+import { enlaceWhatsapp } from '../data/contacto'
+import { useIdioma } from '../i18n/useIdioma'
 
-// Barra superior: logo, enlaces de sección, CV y botón de contacto.
+// Barra superior: logo, enlaces, CV, contacto y botón de idioma.
 export default function Navbar() {
+  const { perfil, ui, navegacion, alternar } = useIdioma()
   return (
     <header className="nav">
       <div className="wrap">
-        <a className="brand" href="#inicio" aria-label="Arxevo, inicio">
+        <a className="brand" href="#inicio" aria-label={ui.inicioAria}>
           <Logo id="arxevo-hueco-nav" />
           <span>Arx<b>evo</b></span>
         </a>
-        <nav className="nav-links" aria-label="Principal">
+        <nav className="nav-links" aria-label={ui.navAria}>
           {navegacion.map((enlace) => (
             <a key={enlace.href} className="solo-pantalla-grande" href={enlace.href}>{enlace.texto}</a>
           ))}
-          <a href={perfil.cv}>CV</a>
-          <a className="nav-cta" href={enlaceWhatsapp}>Hablemos ↗</a>
+          <a href={perfil.cv}>{ui.cv}</a>
+          <a className="nav-cta" href={enlaceWhatsapp(ui.mensajeWhatsapp)}>{ui.hablemos}</a>
+          <button type="button" className="btn-idioma" onClick={alternar} aria-label={ui.botonIdiomaAria}>
+            {ui.botonIdioma}
+          </button>
         </nav>
       </div>
     </header>
