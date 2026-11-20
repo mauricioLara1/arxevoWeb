@@ -1,0 +1,23 @@
+/* BASE: reglas generales y piezas reutilizables (botones, etiquetas, contenedor). */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--font-head); margin: 0; line-height: 1.08; letter-spacing: -0.02em; }
+:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 3px; border-radius: 6px; }
+
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.icon { flex: none; width: 18px; height: 18px; }
+
+.eyebrow { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-soft); display: flex; align-items: center; gap: 10px; }
+.eyebrow::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(47, 107, 255, 0.25); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 10px; font-weight: 600; font-size: 16px; text-decoration: none; border: 1.5px solid transparent; transition: transform 0.15s, background 0.15s, border-color 0.15s; }
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: #4c80ff; }
+.btn-ghost { border-color: rgba(255, 255, 255, 0.28); color: var(--text); }
+.btn-ghost:hover { border-color: #fff; }
+
+@media (min-width: 760px) { .wrap { padding: 0 32px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }

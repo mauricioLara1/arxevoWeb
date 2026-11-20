@@ -1,0 +1,17 @@
+/* COLORES Y FUENTES: cambia aquí y se actualiza toda la página. */
+:root {
+  --bg: #060E26;          /* fondo oscuro */
+  --bg-2: #0A1B4D;       /* azul medianoche */
+  --blue: #0B2A7A;       /* azul rey */
+  --accent: #2F6BFF;     /* azul eléctrico */
+  --accent-soft: #7FA2FF;
+  --text: #E6ECFA;
+  --muted: #B4C0E0;
+  --line: rgba(255, 255, 255, 0.12);
+  --light: #F3F5FA;      /* fondo de secciones claras */
+  --ink: #0A1B4D;        /* texto sobre fondo claro */
+  --ink-muted: #3B4766;
+  --font-head: 'Hanken Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
