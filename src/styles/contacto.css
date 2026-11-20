@@ -1,0 +1,14 @@
+/* CONTACTO: sección final de fondo azul rey. */
+.contact { background: var(--blue); padding: 96px 0; }
+.contact .eyebrow { color: #bfd0ff; }
+.contact .eyebrow::before { background: #fff; box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.25); }
+.contact h2 { font-size: clamp(32px, 7vw, 56px); font-weight: 800; margin: 16px 0; max-width: 760px; }
+.contact-text { color: #d6e0ff; font-size: 19px; max-width: 600px; margin: 0 0 28px; }
+.contact .btn-primary { background: #fff; color: var(--ink); }
+.contact .btn-primary:hover { background: #e6ecfa; }
+.contact .btn-ghost { border-color: rgba(255, 255, 255, 0.5); }
+.contact-links { display: flex; flex-wrap: wrap; gap: 8px 28px; list-style: none; padding: 0; margin: 28px 0 0; }
+.contact-links a { display: inline-block; padding: 12px 0; font-weight: 600; text-decoration: none; }
+.contact-links a:hover { text-decoration: underline; }
+.availability { display: flex; align-items: center; gap: 10px; margin: 16px 0 0; color: #d6e0ff; font-size: 15px; }
+.availability::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: #46d39a; }

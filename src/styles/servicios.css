@@ -1,0 +1,22 @@
+/* SERVICIOS Y CÓMO TRABAJO: sección oscura con tarjetas, pasos numerados y caja de cotización. */
+.services { padding: 88px 0; background: radial-gradient(800px 360px at 10% 0%, rgba(47, 107, 255, 0.14), transparent 60%); }
+.services h2 { font-size: clamp(30px, 6vw, 46px); font-weight: 800; margin: 16px 0 14px; }
+.services-intro { color: var(--muted); font-size: 18px; max-width: 620px; margin: 0 0 36px; }
+.services-grid { display: grid; gap: 16px; }
+.service { border: 1px solid var(--line); border-radius: 16px; padding: 26px; background: rgba(255, 255, 255, 0.03); display: flex; flex-direction: column; gap: 12px; }
+.service .icon { width: 32px; height: 32px; stroke: var(--accent-soft); }
+.service h3 { font-size: 22px; }
+.service p { margin: 0; color: var(--muted); }
+.process { margin-top: 72px; }
+.process h2 { margin-bottom: 28px; }
+.steps { display: grid; gap: 28px; margin: 0; padding: 0; list-style: none; }
+.step-num { font-family: var(--font-head); font-weight: 800; font-size: 44px; line-height: 1; color: var(--accent); }
+.step h3 { font-size: 20px; margin: 10px 0 6px; }
+.step p { margin: 0; color: var(--muted); }
+.quote-box { margin-top: 64px; border: 1px solid var(--line); border-radius: 20px; padding: 32px; background: linear-gradient(160deg, var(--bg-2), #081338); display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
+.quote-box p { margin: 0; font-family: var(--font-head); font-size: clamp(22px, 4vw, 30px); line-height: 1.25; font-weight: 700; max-width: 640px; }
+@media (min-width: 760px) {
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
+  .steps { grid-template-columns: repeat(4, 1fr); }
+  .quote-box { flex-direction: row; align-items: center; justify-content: space-between; }
+}

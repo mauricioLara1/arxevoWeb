@@ -2,4 +2,5 @@
 .nav-links { gap: 14px; }
 .btn-idioma { min-width: 44px; min-height: 44px; padding: 0 10px; background: transparent; color: var(--text); border: 1.5px solid rgba(255, 255, 255, 0.28); border-radius: 8px; font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.08em; cursor: pointer; }
 .btn-idioma:hover { border-color: #fff; }
-@media (min-width: 760px) { .nav-links { gap: 22px; } }
+@media (min-width: 760px) { .nav-links { gap: 16px; } }
+@media (min-width: 1000px) { .nav-links { gap: 22px; } }
