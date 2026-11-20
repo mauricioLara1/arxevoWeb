@@ -2,4 +2,5 @@
 export const navegacion = [
   { texto: 'About me', href: '#sobre-mi' },
   { texto: 'Stack', href: '#stack' },
+  { texto: 'Projects', href: '#proyectos' },
 ]

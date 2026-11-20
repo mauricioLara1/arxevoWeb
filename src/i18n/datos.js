@@ -4,13 +4,15 @@ import { ui as uiEs } from '../data/es/ui'
 import { arquitectura as arquitecturaEs } from '../data/es/arquitectura'
 import { navegacion as navegacionEs } from '../data/es/navegacion'
 import { stack as stackEs } from '../data/es/stack'
+import { proyectos as proyectosEs } from '../data/es/proyectos'
 import { perfil as perfilEn } from '../data/en/perfil'
 import { ui as uiEn } from '../data/en/ui'
 import { arquitectura as arquitecturaEn } from '../data/en/arquitectura'
 import { navegacion as navegacionEn } from '../data/en/navegacion'
 import { stack as stackEn } from '../data/en/stack'
+import { proyectos as proyectosEn } from '../data/en/proyectos'
 
 export const idiomas = {
-  es: { perfil: perfilEs, ui: uiEs, arquitectura: arquitecturaEs, navegacion: navegacionEs, stack: stackEs },
-  en: { perfil: perfilEn, ui: uiEn, arquitectura: arquitecturaEn, navegacion: navegacionEn, stack: stackEn },
+  es: { perfil: perfilEs, ui: uiEs, arquitectura: arquitecturaEs, navegacion: navegacionEs, stack: stackEs, proyectos: proyectosEs },
+  en: { perfil: perfilEn, ui: uiEn, arquitectura: arquitecturaEn, navegacion: navegacionEn, stack: stackEn, proyectos: proyectosEn },
 }
